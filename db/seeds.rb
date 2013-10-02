@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+books = Feed.find_or_create_by_url("http://www.huffingtonpost.com/feeds/verticals/books/index.xml")
+latest = Feed.find_or_create_by_url('http://feeds.huffingtonpost.com/huffingtonpost/LatestNews')

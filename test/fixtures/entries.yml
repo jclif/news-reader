@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  guid: MyString
+  link: MyString
+  title: MyString
+  published_at: 2013-10-02 09:21:22
+  feed_id: 1
+  json: MyText
+
+two:
+  guid: MyString
+  link: MyString
+  title: MyString
+  published_at: 2013-10-02 09:21:22
+  feed_id: 1
+  json: MyText
