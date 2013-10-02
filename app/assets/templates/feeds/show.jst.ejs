@@ -1,3 +1,5 @@
-<%= feed.title %>
+<%= feed.escape("title") %>
 <br>
-<%= feed.url %>
+<%= feed.escape("url") %>
+<br>
+<a href="#" id="refresh">refresh</a>

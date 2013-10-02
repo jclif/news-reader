@@ -14,18 +14,18 @@
 ActiveRecord::Schema.define(:version => 20131002132122) do
 
   create_table "entries", :force => true do |t|
-    t.string   "guid",         :null => false
-    t.string   "link",         :null => false
-    t.string   "title",        :null => false
-    t.datetime "published_at", :null => false
-    t.integer  "feed_id",      :null => false
-    t.text     "json",         :null => false
+    t.string   "guid"
+    t.string   "link"
+    t.string   "title"
+    t.datetime "published_at"
+    t.integer  "feed_id"
+    t.text     "json"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end
 
   add_index "entries", ["feed_id"], :name => "index_entries_on_feed_id"
-  add_index "entries", ["guid"], :name => "index_entries_on_guid", :unique => true
+  add_index "entries", ["guid"], :name => "index_entries_on_guid"
 
   create_table "feeds", :force => true do |t|
     t.string   "url",        :null => false
