@@ -4,7 +4,7 @@ NewsReader.Views.FeedsList = Backbone.View.extend({
     var that = this;
 
     var renderedContent = JST["feeds/list"]({
-      feeds: that.collection;
+      feeds: that.collection
     });
 
     that.$el.html(renderedContent);

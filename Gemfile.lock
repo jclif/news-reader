@@ -137,6 +137,7 @@ DEPENDENCIES
   backbone-on-rails
   better_errors
   binding_of_caller
+  ejs
   jquery-rails
   pry-rails
   quiet_assets

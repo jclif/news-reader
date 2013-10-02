@@ -12,6 +12,6 @@ window.NewsReader = {
 };
 
 $(document).ready(function(){
-  var feeds = JSON.parse($('#bootstrapped_feeds_json').html());
+  var feedsData = JSON.parse($('#bootstrapped_feeds_json').html());
   NewsReader.initialize($('body'), feedsData);
 });

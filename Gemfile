@@ -4,6 +4,7 @@ gem 'rails', '3.2.14'
 gem 'backbone-on-rails'
 gem 'simple-rss'
 require 'open-uri'
+gem 'ejs'
 
 group :development do
   gem 'sqlite3'
