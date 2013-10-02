@@ -3,6 +3,8 @@ class Entry < ActiveRecord::Base
 
   belongs_to :feed
 
+  # before_validation :giveGUID
+
   def self.create_from_json!(entryData, feed)
     Entry.create!({
       guid: entryData.guid,
@@ -13,4 +15,8 @@ class Entry < ActiveRecord::Base
       feed_id: feed.id
     })
   end
+
+  # def giveGUID
+  #   self.guid ||= self.link
+  # end
 end
